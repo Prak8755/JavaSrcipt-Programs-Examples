@@ -157,22 +157,30 @@
 //         }
 //         }
 
+let num=parseInt(prompt('enter a no'));
 
-let x=parseInt(prompt('enter a no'));
+// console.log(Math.ceil(num/2));
 
-var count = 0;
 
-for (i=1;i<=Math.ceil(x/2);i++){
-if(x%i==0){
-count=count+1;
+
+let count =0;
+
+for (i=2;i<=(Math.ceil(num/2));i++){
+    
+if(num%i==0){
+    count=count+1;
 }
-}if(count==2){
-    console.log(`${x} is not prime`);
-}else{
-    console.log(`${x} is Prime no `);
+}
+if (num==1){
+    console.log(`${num} is neither a prime nor a composite`);
+}
+else if(count>=1){
+console.log(`${num} is not a prime no `);
 }
 
-            
+else(console.log(`${num} is a prime no`));
+
+         
         
     
 
